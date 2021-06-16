@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K38S9SD');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/twentytwenty.css" />
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon" />
+    <title>Мастер мед</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K38S9SD"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header" id="header">
+      <div class="header__top">
+        <div class="content">
+          <div class="header__top-inner mobile-show">
+            <div class="header__top-phone">
+              <img
+                src="img/icon/phone-icon.svg"
+                alt=""
+                class="header__top-icon"
+              />
+              <a href="tel:+380955111704" class="phone">+38 (095) 511 17 04</a>
+            </div>
+            <div class="header__top-city">
+              <img
+                src="img/icon/marcer-city.svg"
+                alt=""
+                class="header__top-icon"
+              />
+              <span class="sity-name">Харьков</span>
+            </div>
+            <div class="header__top-timework">
+              <img src="img/icon/timework.svg" alt="" class="header__top-icon" />
+              <span>Пн-Сб 8:00-20:00</span>
+              <span>Вс 9:00-18:00</span>
+            </div>
+            <div class="header__top-language">
+              <button type="button" class="lang-item active">Ru</button>
+              <button type="button" class="lang-item">
+                <a href="implantUA.html">Ua</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="content">
+          <div class="header__bottom-inner">
+            <a href="index.html" class="logo__link">
+              <img src="img/header-logo.png" alt="" class="logo__link-img" />
+            </a>
+            <nav class="menu">
+              <div class="menu-btn">
+                <span></span>
+              </div>
+              <ul class="menu__list mobile-show implant-menu__list">
+                <li class="menu__list-item">
+                  <a href="#services" class="menu__list-link">Наши услуги</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#choice" class="menu__list-link">О нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#example" class="menu__list-link">Наши работы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#reviews" class="menu__list-link">Отзывы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#contacts" class="menu__list-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__top-icon-mobile">          
+              <a href="tel:+380955111704" class="phone-mobile">
+                <img src="img/icon/phone-icon.svg" alt="" class="header__top-icon"/>
+              </a>
+            </div>
+            <button class="btn-form btn-form__green" type="button">Перезвонить мне</button>
+          </div>
+        </div>
+      </div>
+      <div class="header__info">
+        <div class="content">
+          <div class="header__info-title">
+            Имплантация зубов быстро и без боли! <br>
+            99% приживаемости импланта! Сертифицированные импланты <br>
+            из Израиля, Кореи и Швейцарии
+          </div>
+          <ul class="header__info-list">
+            <li class="header__info-list-item">
+              Наши врачи с опытом примут быстро и без очереди
+            </li>
+            <li class="header__info-list-item">
+              Мы используем премиум анестезию производства Италии, Германии,
+              Франции
+            </li>
+            <li class="header__info-list-item">
+              Лечение во сне без боли и стресса!
+            </li>
+            <li class="header__info-list-item">
+              Мы ставим точные диагнозы на самом современном оборудовании
+            </li>
+            <li class="header__info-list-item">Гарантия на услуги до 5 лет</li>
+          </ul>
+          <div class="attention">Внимание!</div>
+          <button type="button" class="btn-form btn-form__red" id="btn-form">
+            Получить супер скидку
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <form action="mail.php" class="modal-window" method="POST">
+      <div id="overlay"></div>
+      <div class="modal-window__wrapper">
+        <button type="button" class="btn-close"></button>
+        <h3 class="modal-window__title">Заполните форму</h3>
+        <div class="modal-window__text">
+          и наш менеджер перезвонит Вам в течении 5 мин, чтобы ответить на все
+          вопросы
+        </div> 
+        <input type="text" class="form-input" data-validate-field="name" name="name" placeholder="Ваше имя" />
+        <input type="tel" class="form-input" data-validate-field="tel" name="tel" placeholder="Ваш телефон" />
+        <button class="btn-form btn-form__green" type="submit">
+          Перезвоните мне
+        </button>
+      </div>
+    </form>
+
+    <section class="services" id="services">
+      <div class="content">
+        <h3 class="title services__title-center">Наши услуги</h3>
+        <div class="implsnt-services__subtitle">
+          По всей сети ТМ «Мастер Мед» ежедневно устанавливают от 15 до 23 имплантов. Наши хирурги имеют огромный опыт <br>
+          работы с имплантами мировых производителей Osstem, IBT, Straumann. С 99% приживаемости. <br>
+          Быстро, профессионально, без боли.
+        </div>
+        <div class="services__inner">
+          <div class="services__box">
+            <div class="implant-services__box-images">
+              <img src="img/osstem-bg.png" width="166" alt="">
+              <div class="implant-services__icon">
+                <img src="img/Flag_of_South_Korea.png" alt="" class="implant-services__icon-flag"/>
+              </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">
+                Импланты Osstem (Корея)
+              </h3>
+              <div class="services__box-text">
+                Лидер установок. 
+                Высокий коэффициент приживаемости 99,8%. Долговечность до 50 лет. Премиум качество по хорошей цене. Гарантия 
+                от производителя.
+              </div>
+            </div>
+            <button class="btn-form btn-form__green" id="services-btn" type="button">
+              Записаться на консультацию
+            </button>
+          </div>
+          <div class="services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/israil-bg.jpg)"
+            >
+              <div class="implant-services__icon">
+                <img src="img/flags_israil.png" class="implant-services__icon-flag" alt="">
+              </div>
+              <div class="implant-services__icon-logo implant-services__icon-israil">
+                <img src="img/israil-logo.png" width="75" height="64" alt="">
+              </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">Импланты IBT (Израиль)</h3>
+              <div class="services__box-text">
+                Простая и быстрая установка импланта. Высокий коэффициент приживаемости 98,6%. Гарантия на установку от производителя. По доступной цене.
+              </div>
+            </div>
+            <button class="btn-form services__info-btn" id="services-btn">
+              Записаться на консультацию
+            </button>
+          </div>
+          <div class="services__box">
+            <div
+              class="implant-services__box-images"
+              style="background-image: url(img/switzerland-bg.png)"
+            >
+              <div class="implant-services__icon">
+                <img src="img/flag-of-switzerland.png" class="implant-services__icon-flag" alt="">
+              </div>
+              <div class="implant-services__icon-logo-switzerland implant-services__icon-logo">
+                <img src="img/switzerland-logo.png" alt="">
+              </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">Импланты Straumann (Швейцария)</h3>
+              <div class="services__box-text">                
+                Швейцарское качество премиум класса. Приживаемость импланта 100% в отличие от других производителей. Процесс заживления происходит в 2 раза быстрее, чем при установке других конструкций.
+              </div>
+            </div>
+            <button class="btn-form btn-form__green" id="services-btn" type="button">
+              Записаться на консультацию
+            </button>
+          </div>        
+        </div>
+      </div>
+    </section>
+
+    <section class="choice" id="choice">
+      <div class="content">
+        <div class="choice__inner">
+          <h2 class="title">Наша большая семья</h2>
+          <div class="choice__img">
+            <img src="img/choice__img.jpg" class="choice__img-bg" width="1200" alt="">
+            <img src="img/header-logo.png" alt="" class="choice-logo" />
+          </div>
+          <div class="choice__box">
+            <h2 class="title">Почему выбирают нас</h2>
+            <ul class="choice__list">
+              <li class="choice__list-item">
+                Мы находимся в каждом районе города
+              </li>
+              <li class="choice__list-item">
+                В штате 54 опытных специалиста всех стоматологических
+                направлений
+              </li>
+              <li class="choice__list-item">
+                Клиенты из Польши, Германии, Италии регулярно проходят у нас
+                лечение
+              </li>
+              <li class="choice__list-item">Более 75 000 довольных клиентов</li>
+              <li class="choice__list-item">
+                ТМ «Мастер Мед» является официальным представителем корейских
+                зубных имплантов Osstem
+              </li>
+              <li class="choice__list-item">
+                ТМ «Мастер Мед» сотрудничает со страховыми компаниями
+              </li>
+              <li class="choice__list-item">
+                Мы лечим людей с ограниченными финансовыми возможностями
+                абсолютно бесплатно!
+              </li>
+              <li class="choice__list-item">
+                Все работы и видео-отзывы наших довольных клиентов Вы можете
+                посмотреть на наших социальных сетях                
+              </li>
+              <li class="choice__list-item">
+                Все клиники оснащены современным оборудованием мировых
+                производителей, хирургическим лазером, ультразвуковым удалением
+                зубов (пьезотом), аппаратом вектор и лучшими материалами
+              </li>
+            </ul>
+            <button class="btn-form btn-form__red" id="btn-form" type="button">
+              Получить персональную скидку
+            </button>
+            <p class="get-discount">
+              Только сегодня получи персональную скидку -20% на терапию!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="example" id="example">
+      <div class="content">
+        <h2 class="title">Мы добиваемся лучшего результата</h2>
+        <div class="example__slider-title">Наши работы</div>
+        <div class="example__slider">
+          <div class="example__slider-box">
+            <div class="example-title">Результат установки импланта <br> Osstem (Корея)</div>
+            <div class="slider-box__img">
+              <img
+                src="img/implant-before.JPG"
+                alt=""
+                class="slider-box__img-before"
+                width="510"
+              />
+              <img src="img/implant-after.JPG" width="510" alt="" class="slider-box__img-before" />
+            </div>
+            <img src="img/header-logo.png" class="slider-logo" alt="" />
+            <div class="before-after">
+              <span>до</span>
+              <span>после</span>
+            </div>
+          </div>
+          <div class="example__slider-box">
+            <div class="example-title">Результат установки МК коронки Duceram (Германия)</div>
+            <div class="slider-box__img">
+              <img
+                src="img/coronka-before.JPG"
+                alt=""
+                class="slider-box__img-before"
+              />
+              <img src="img/coronka-after.JPG" alt="" class="slider-box__img-before" />
+            </div>
+            <img src="img/header-logo.png" class="slider-logo" alt="" />
+            <div class="before-after">
+              <span>до</span>
+              <span>после</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn-form btn-form__red btn-form__center" id="btn-form">
+          Записаться на консультацию
+        </button>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="content">
+        <h2 class="title">Отзывы клиентов о нашей работе</h2>
+        <div class="reviews__slider">
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260" 
+              src="https://www.youtube.com/embed/QATSrZRC5KY?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260" 
+              src="https://www.youtube.com/embed/c2aQq9cSKow?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260" 
+              src="https://www.youtube.com/embed/vrg-eEDfLzw?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260" 
+              src="https://www.youtube.com/embed/n2COVcODMIs?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="reviews__slider-item">
+            <iframe
+              width="370"
+              height="260"
+              src="https://www.youtube.com/embed/Wlzpmlsw3fU?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <h2 class="title reviews-title">Мастер Мед заботится о Вас</h2>
+      </div>
+    </section>
+
+    <section class="call-center">
+      <div class="content">
+        <div class="call-center__inner">
+          <h3 class="call-center__title">
+            С 8.00 до 20.00 работает Call-center
+          </h3>
+          <div class="call-center__info">
+            Менеджер по сопровождению клиента всегда с Вами на связи и ответит
+            на все вопросы, подберет удобное время для приёма.
+          </div>
+          <div class="call-center__info">
+            Мы всегда рядом, чтобы Вы получили желаемый результат.
+          </div>
+          <button class="btn-form btn-form__green" id="btn-form" type="button">
+            Задать вопрос
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="content">
+        <h2 class="title">Контакты</h2>
+        <div class="contacts-social">
+          <a href="tel:+380955111704" class="contacts__info-phone-link">
+            <img src="img/phone.png" class="contacts__info-phone-img" alt="" />
+            +38 (095) 511 17 04
+          </a>
+          <a
+            href="viber://chat?number=+380661232375"
+            class="contacts__info-phone-link"
+          >
+            <img src="img/viber.png" class="contacts__info-phone-img" alt="" />
+            (066) 123 23 75
+          </a>
+          <a
+            class="contacts__info-phone-link"
+            href="mailto:mastermedcomua@gmail.com"
+          >
+            <img src="img/gmail.png" class="contacts__info-phone-img" alt="" />
+            mastermedcomua@gmail.com
+          </a>
+          <a
+            href="tg://resolve?domain=master_med_kh"
+            class="contacts__info-phone-link"
+          >
+            <img
+              src="img/telegram.png"
+              class="contacts__info-phone-img"
+              alt=""
+            />
+            (066) 123 23 75
+          </a>
+        </div>
+        <div class="social__link-wrapper">
+          <a
+            href="https://www.instagram.com/master_med_/"
+            class="social__link"
+            target="_blank"
+          >
+            <img
+              src="img/icon/instagram.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/mastermedOfficial/"
+            class="social__link"
+            target="_blank"
+          >
+            <img src="img/facebook.png" alt="" width="25" height="25" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCeHGO1unQAdOSzLCDIy6W1Q"
+            class="social__link"
+            target="_blank"
+          >
+            <img src="img/youtube.png" alt="" width="30" height="30" />
+          </a>
+        </div>
+        <div class="contacts__info-subtitle">
+          Нажмите на адрес для быстрого перехода:
+        </div>
+
+        <div class="geolocation">
+          <div id="geolocation-btn__inner">
+            <div class="geolocation-btn__inner-item">
+              <div class="geolocation__title-item">Центр</div>
+              <div class="geolocation-btn active" data-location="1">
+                пер. Троицкий, 2
+              </div>
+              <div class="geolocation-btn" data-location="2">
+                ул. Максимилиановская, 3
+              </div>
+              <div class="geolocation-btn" data-location="3">
+                ул. Лермонтовская, 18-А
+              </div>
+              <div class="geolocation-btn" data-location="4">
+                пр-т Науки, 27
+              </div>
+            </div>
+            <div class="geolocation-btn__inner-item">
+              <div class="geolocation__title-item">Салтовка</div>
+              <div class="geolocation-btn" data-location="5">ул. Амосова, 13</div>
+              <div class="geolocation-btn" data-location="6">
+                пр. Тракторостроителей, 112
+              </div>
+              <div class="geolocation-btn" data-location="7">
+                ул. Гвардейцев-Широнинцев, 127
+              </div>
+            </div>
+            <div class="geolocation-btn__inner-item">
+              <div class="geolocation__title-item">
+                Новые Дома, ХТЗ, Роганский ж/м
+              </div>
+              <div class="geolocation-btn" data-location="8">
+                ул. Зубарева, 39-А
+              </div>
+              <div class="geolocation-btn" data-location="9">
+                ул. Харьковских Дивизий, 7
+              </div>
+            </div>
+          </div>             
+          <div class="map__inner">
+            <div class="map active" data-map="1">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №1 <br />
+                  пер. Троицкий (Ивана Дубового), 2
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  От ул. Одесская – марш. такси 218э, троллейбус № 5, №6, №3
+                  <br />
+                  От Залютино, м. Холодная гора, Москалевка – трамвай № 3 <br />
+                  От Баварии – марш. такси 11 Э до пл. Конституции <br />
+                  От Алексеевки – марш. такси № 119 э до пер. Плетневский <br />
+                  От Аэропорта – троллейбус № 5 до ул. Кузнечной <br />
+                  7 мин пешком от ст. метро Площадь Конституции (Советская).
+                  Кабинет расположен в 100 метрах от ТЦ «Павловский».
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1481.9034756460337!2d36.230320741030496!3d49.987297634171405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f6a52bbed3%3A0x751a51d1768abaee!2z0L_QtdGALiDQotGA0L7QuNGG0LrQuNC5LCAyLCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1622202283361!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="4">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №4 <br>
+                  пр-т Науки, 27
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  Рядом со ст. метро Ботанический Сад
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.3401127664283!2d36.221088415696855!3d50.02372247941882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1312715acbd%3A0x4f247b73a27d759c!2z0L_RgNC-0YHQvy4g0J3QsNGD0LrQuCwgMjcsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNjEwMDA!5e0!3m2!1sru!2sus!4v1622732846060!5m2!1sru!2sus" 
+                  width="540" 
+                  height="397" 
+                  style="border:0;" 
+                  allowfullscreen=""
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+            <div class="map" data-map="5">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №5 <br />
+                  ул. Амосова (Корчагинцев), 13
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  С Октябрьского района на маршрутном такси 211Е; <br />
+                  От ст. метро «Барабашова» на маршрутном такси 10Е;<br />
+                  С Киевского района на маршрутном такси 233Е.
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.3760529328374!2d36.35115031516389!3d49.985558728634594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127098781271441%3A0xdeaa7177a7c996ca!2z0YPQuy4g0JDQvNC-0YHQvtCy0LAsIDEzLCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1622202473230!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="9">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №6 <br />
+                  ул. Харьковских Дивизий, 7
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  2 мин пешком от ст. метро «Армейская»
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.733870875302!2d36.33117581516289!3d49.960094530456985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270bb2d524fcb5%3A0x9934b9e488e2db1a!2z0YPQuy4g0KXQsNGA0YzQutC-0LLRgdC60LjRhSDQlNC40LLQuNC30LjQuSwgNywg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622203196866!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="2">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №2 <br />
+                  ул. Максимилиановская, 3
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  3 мин пешком от ст. метро Пушкинская
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.474258087935!2d36.24461361516458!3d50.00246552742421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0c2e9db7391%3A0xdeb88c8495fd4097!2z0YPQuy4g0JzQsNC60YHQuNC80LjQu9C40LDQvdC-0LLRgdC60LDRjywgMywg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622202639035!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="6">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №7 <br />
+                  пр-т Тракторостроителей, 112
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  От ст. метро «Барабашова» на троллейбусе №24 или маршрутном
+                  такси 10Е;
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.551283251441!2d36.33950571516451!3d50.00102162752758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709f20efd5cc1%3A0xeb0124d7d73c8bc4!2z0L_RgNC-0YHQvy4g0KLRgNCw0LrRgtC-0YDQvtGB0YLRgNC-0LjRgtC10LvQtdC5LCAxMTIsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1622203116207!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="8">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №9 <br />
+                  ул. Зубарева, 39-А
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  От ст. метро «Пролетарская» на маршрутном такси 16э и 71Е;
+                  <br />
+                  От ст. метро «Барабашова» на маршрутном такси 121э. <br />
+                  <br />
+                  Остановка транспорта «Ул. Зубарева» (ул. Сергея Грицевца)
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2569.300145092404!2d36.40553511516078!3d49.91194123390144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270cf128b78299%3A0x5ea4b519619172d4!2z0YPQuy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0JfRg9Cx0LDRgNC10LLQsCwgMzksINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1622203292968!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="3">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №3 <br />
+                  ул. Лермонтовская, 18-А
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  8 мин пешком от ст. метро Пушкинская.
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.3218406594883!2d36.25160511516472!3d50.005322627219705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0c45fea5987%3A0x8d1b2e50e196357a!2zMThBLCDQm9C10YDQvNC-0L3RgtC-0LLRgdC60LDRjyDRg9C7LiwgMTjQkCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622202809280!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="7">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматология «Мастер Мед» №8 <br />
+                  ул. Гвардейцев-Широнинцев, 127
+                </div>
+                <div class="map__info-subtitle">Как добраться:</div>
+                <p class="map__info-text">
+                  От ст. метро «Московский проспект» на троллейбусе №31; <br />
+                  С Одесской на троллейбусе №35, маршрутном такси 107Е; <br />
+                  От Героев Труда на автобусах 28 и 41Е;<br />
+                  С Алексеевки на маршрутном такси 55Е;<br />
+                  От ст. метро «Малышева» на маршрутном такси 294Е. <br />
+                  <br />
+
+                  Остановка транспорта «Северная Салтовка» (троллейб. круг).
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Время работы: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>наличными и банковскими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.462220084906!2d36.36125081516622!3d50.040172024723816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a787e62b191d%3A0xa73e583eef5cb828!2z0YPQuy4g0JPQstCw0YDQtNC10LnRhtC10LIt0KjQuNGA0L7QvdC40L3RhtC10LIsIDEyNywg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622202979411!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content">
+        <div class="footer__row">
+          <a href="#header" class="footer__link">
+            <img src="img/footer-logo.png" alt="" class="footer__link-logo" />
+          </a>
+          <p class="confidentiality">Политика конфиденциальности</p>
+          <p class="confidentiality">© 2021 "Мастер Мед". Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

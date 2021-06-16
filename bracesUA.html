@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K38S9SD');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/twentytwenty.css" />
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon" />
+    <title>Мастер мед</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K38S9SD"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header" id="header">
+      <div class="header__top">
+        <div class="content">
+          <div class="header__top-inner mobile-show">
+            <div class="header__top-phone">
+              <img
+                src="img/icon/phone-icon.svg"
+                alt=""
+                class="header__top-icon"
+              />
+              <a href="tel:+380955111704" class="phone">+38 (095) 511 17 04</a>
+            </div>
+            <div class="header__top-city">
+              <img
+                src="img/icon/marcer-city.svg"
+                alt=""
+                class="header__top-icon"
+              />
+              <span class="sity-name">Харкiв</span>
+            </div>
+            <div class="header__top-timework">
+              <img src="img/icon/timework.svg" alt="" class="header__top-icon" />
+              <span>Пн-Сб 8:00-20:00</span>
+              <span>Нд 9:00-18:00</span>
+            </div>
+            <div class="header__top-language">
+              <button type="button" class="lang-item"> 
+                <a href="braces.html">Ru</a>
+              </button>
+              <button type="button" class="lang-item active">Ua</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="content">
+          <div class="header__bottom-inner">
+            <a href="index.html" class="logo__link">
+              <img src="img/header-logo.png" alt="" class="logo__link-img" />
+            </a>
+            <nav class="menu">
+              <div class="menu-btn">
+                <span></span>
+              </div>
+              <ul class="menu__list mobile-show braces-menu__list">
+                <li class="menu__list-item">
+                  <a href="#services" class="menu__list-link">Нашi послуги</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#choice" class="menu__list-link">Про нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#example" class="menu__list-link">Нашi работи</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#reviews" class="menu__list-link">Відгуки</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#contacts" class="menu__list-link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__top-icon-mobile">          
+              <a href="tel:+380955111704" class="phone-mobile">
+                <img src="img/icon/phone-icon.svg" alt="" class="header__top-icon"/>
+              </a>
+            </div>
+            <button class="btn-form btn-form__green" type="button">Передзвонити мені</button>
+          </div>
+        </div>
+      </div>
+      <div class="header__info">
+        <div class="content">
+          <h3 class="header__info-title">
+            Отримай білі й рівні зуби за 6 місяців за допомогою брекет-систем
+            від провідних виробників Італії
+            та США з гарантією результату!
+          </h3>
+          <ul class="header__info-list">
+            <li class="header__info-list-item">
+              Наші лікарі з досвідом приймуть швидко і без черги.
+            </li>
+            <li class="header__info-list-item">
+              Ми використовуємо преміум анестезію виробництва Італії, Німеччини, Франції.
+            </li>
+            <li class="header__info-list-item">
+              Лікування уві сні без болю і стресу!
+            </li>
+            <li class="header__info-list-item">
+              Ми ставимо точні діагнози на найсучаснішому обладнанні.
+            </li>
+            <li class="header__info-list-item">Гарантія на послуги до 5 років.</li>
+          </ul>
+          <div class="attention">Увага!</div>
+          <button type="button" class="btn-form btn-form__red" id="btn-form">
+            Отримати супер знижку
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <form action="mail.php" class="modal-window" method="POST">
+      <div id="overlay"></div>
+      <div class="modal-window__wrapper">
+        <button type="button" class="btn-close"></button>
+        <h3 class="modal-window__title">Заповніть форму</h3>
+        <div class="modal-window__text">
+          і наш менеджер зв'яжеться з Вами протягом 5 хв, щоб відповісти на всі питання
+        </div> 
+        <input type="text" class="form-input" data-validate-field="name" name="name" placeholder="Ваше ім'я" />
+        <input type="tel" class="form-input" data-validate-field="tel" name="tel" placeholder="Ваш телефон" />
+        <button class="btn-form btn-form__green" type="submit">
+          Передзвоніть мені
+        </button>
+      </div>
+    </form>
+ 
+    <section class="services" id="services">
+      <div class="content">
+        <h3 class="title services__title-center">Наші послуги</h3>
+        <div class="braces-services__inner">
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/standart-braces.jpg)"
+            >
+              <div class="braces-services__icon">
+                <img src="img/braces-icon.jpg" alt="" class="braces-services__icon-image" width="62" height="62"/>
+              </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">
+                Cтандартні брекети <br>
+                <span class="services__box-subtitle">(металеві)</span>
+              </h3>
+              <div class="services__box-text">
+                Це найдоступніший і універсальний вид брекетів для виправлення прикусу. Металева основа робить
+                їх міцними і надійними.
+              </div>
+            </div>
+            <button class="btn-form btn-form__green" id="services-btn" type="button">
+              Підібрати варіанти лікування
+            </button>
+          </div>
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/vip-braces.jpg)"
+            >
+              <div class="braces-services__icon">
+                <img src="img/vip-braces-icon.png" class="braces-services__icon-image" width="56" height="50" alt="">
+              </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">VIP брекети <br>
+                <span class="services__box-subtitle">(сапфірові)</span>
+              </h3>
+              <div class="services__box-text">
+                Виготовлені зі штучних сапфірів, прозорі, непомітні для оточуючих з благородним блиском на зубах - це Lamborghini сред брекетів, що підкреслюють Вашу статусність.
+              </div>
+            </div>
+            <button class="btn-form services__info-btn" id="services-btn">
+              Підібрати варіанти лікування
+            </button>
+          </div>
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/Lingvalnye-brekety.jpeg)"
+            >
+              <div class="braces-services__icon">
+                <img src="img/Lingvalnye-brekety.jpg" class="braces-services__icon-image" width="62" height="60" alt="">
+              </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">Внутрішні брекети - <br>
+                непомітне виправлення прикусу                
+                <span class="services__box-subtitle">(лінгвальні)</span>
+              </h3>
+              <div class="services__box-text">                
+                Вони непомітні для оточуючих, тому що встановлюються на внутрішню частину зубів, а не на зовнішню, як всі інші брекети.
+              </div>
+            </div>
+            <button class="btn-form btn-form__green" id="services-btn" type="button">
+              Підібрати варіанти лікування
+            </button>
+          </div>          
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/invisible-braces.JPG)"
+            >
+            <div class="braces-services__icon">
+              <img src="img/invisible-braces-icon.png" alt="" class="braces-services__icon-image" width="63" height="63"/>
+            </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">Невидимі брекети                
+                <span class="services__box-subtitle">(керамічні)</span>
+              </h3>
+              <div class="services__box-text">
+                Вони підбираються під колір Вашої емалі і повністю зливаються з Вашим зубом.
+              </div>
+            </div>
+            <button class="btn-form services__info-btn" id="services-btn">
+              Підібрати варіанти лікування
+            </button>
+          </div>
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/samo3.jpg)"
+            >
+            <div class="braces-services__icon">
+              <img src="img/damon-q-one-breket.png" alt="" class="braces-services__icon-image" />
+            </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">Швидкі брекети                 
+                <span class="services__box-subtitle">(самолігуючі)</span>
+              </h3>
+              <div class="services__box-text">
+                Унікальна система брекетів, дозволяє майже в два рази швидше виправляти зуби і рідко відвідувати стоматолога для корекції
+                раз в два місяці.
+              </div>
+            </div>
+            <button class="btn-form services__info-btn" id="services-btn">
+              Підібрати варіанти лікування
+            </button>
+          </div>
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/trainers.jpg)"
+            >
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">
+                Унікальна система <br>                
+                для коригування прикусу 
+                <span class="services__box-subtitle">(трейнери)</span>
+              </h3>
+              <div class="services__box-text">
+                Унікальні капи для вирівнювання зубів. Являють собою готовий апарат, який підбирається індивідуально за розміром і жорсткості, використовуються для виправлення<br>
+                прикусу у дітей.
+              </div>
+            </div>
+            <button class="btn-form btn-form__green" id="services-btn" type="button">
+              Підібрати варіанти лікування
+            </button>
+          </div>
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/alaners.jpeg)"
+            >
+              <div class="braces-services__icon">
+                <img src="img/alaners.png" alt="" class="braces-services__icon-image" width="62" height="62"/>
+              </div>
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">Невидимі пластини<br>               
+                <span class="services__box-subtitle">(элайнери)</span>
+              </h3>
+              <div class="services__box-text">
+                Ефективне вирівнювання зубів без брекетів. Прозорі капи, які виготовляються індивідуально під кожного клієнта.
+              </div>
+            </div>
+            <button class="btn-form btn-form__green" id="services-btn" type="button">
+              Підібрати варіанти лікування
+            </button>
+          </div>
+          <div class="braces-services__box">
+            <div
+              class="services__box-images"
+              style="background-image: url(img/plate-children.jpeg)"
+            >
+              <img src="img/header-logo.png" alt="" class="services-logo" />
+            </div>
+            <div class="braces-services__info">
+              <h3 class="braces-services__box-title">Пластини для вирівнювання <br>
+                зубов детям
+              </h3>
+              <div class="services__box-text">
+                Наші дітки самі або з батьками вибирають будь-який дизайн, колір за бажанням. Знімні пластинки є ефективним видом
+                лікування прикусу у дітей. Призначаються дітям до 12 років
+              </div>
+            </div>
+            <button class="btn-form btn-form__green" id="services-btn" type="button">
+              Підібрати варіанти лікування
+            </button>
+          </div>          
+        </div>
+        <button class="btn-form btn-form__red btn-form__center" type="button">
+          Отримати свою знижку
+        </button>
+      </div>
+    </section>
+
+    <section class="choice" id="choice">
+      <div class="content">
+        <div class="choice__inner">
+          <h2 class="title">Наша велика родина</h2>
+          <div class="choice__img">
+            <img src="img/choice__img.jpg" class="choice__img-bg" width="1200" alt="">
+            <img src="img/header-logo.png" alt="" class="choice-logo" />
+          </div>
+          <div class="choice__box">
+            <h2 class="title">Чому обирають нас</h2>
+            <ul class="choice__list">
+              <li class="choice__list-item">
+                Ми знаходимося в кожному районі міста
+              </li>
+              <li class="choice__list-item">
+                У штаті 54 досвідчених фахівця всіх стоматологічних напрямків
+              </li>
+              <li class="choice__list-item">
+                Клієнти з Польщі, Німеччини, Італії регулярно проходять у нас лікування
+              </li>
+              <li class="choice__list-item">Понад 75 000 задоволених клієнтів</li>
+              <li class="choice__list-item">
+                ТМ «Майстер Мед» є офіційним представником корейських зубних імплантів Osstem
+              </li>
+              <li class="choice__list-item">
+                ТМ «Майстер Мед» співпрацює зі страховими компаніями
+              </li>
+              <li class="choice__list-item">
+                Ми лікуємо людей з обмеженими фінансовими можливостями абсолютно безкоштовно!
+              </li>
+              <li class="choice__list-item">
+                Всі роботи і відео-відгуки наших задоволених клієнтів Ви можете подивитися в наших соціальних мережах               
+              </li>
+              <li class="choice__list-item">
+                Всі клініки оснащені сучасним обладнанням світових виробників, хірургічним лазером, ультразвуковим видаленням зубів (пьезотом), апаратом вектор і кращими матеріалами
+              </li>
+            </ul>
+            <button class="btn-form btn-form__red" id="btn-form" type="button">
+              Отримати персональну знижку
+            </button>
+            <p class="get-discount">
+              Тільки сьогодні отримайте персональну знижку -20% на терапію!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="example" id="example">
+      <div class="content">
+        <h2 class="title">Ми досягаємо найкращого результату</h2>
+        <div class="example__slider-title">Наші роботи</div>
+        <div class="example__slider">   
+          <div class="example__slider-box">
+            <div class="example-title">Результат установки <br> керамічної брекет-системи</div>
+            <div class="slider-box__img">
+              <img src="img/after4.jpg" width="510" alt="" class="slider-box__img-before" />
+              <img
+                src="img/before4.JPEG"
+                width="510"
+                alt=""
+                class="slider-box__img-before"
+              />
+            </div>
+            <img src="img/header-logo.png" class="slider-logo" alt="" />
+            <div class="before-after">
+              <span>до</span>
+              <span>післе</span>
+            </div>
+          </div>
+          <div class="example__slider-box">
+            <div class="example-title">Результат установки <br> металевої брекет-системи</div>
+            <div class="slider-box__img">
+              <img src="img/braces-before1.jpeg" width="510" alt="" class="slider-box__img-before" />
+              <img
+                src="img/braces-after1.jpeg"
+                width="510"
+                alt=""
+                class="slider-box__img-before"
+              />
+            </div>
+            <img src="img/header-logo.png" class="slider-logo" alt="" />
+            <div class="before-after">
+              <span>до</span>
+              <span>післе</span>
+            </div>
+          </div>
+          <div class="example__slider-box">
+            <div class="example-title">Результат установки <br> металевої брекет-системи</div>
+            <div class="slider-box__img">
+              <img src="img/braces-before2.jpeg" width="510" alt="" class="slider-box__img-before" />
+              <img
+                src="img/braces-after2.jpeg"
+                width="510"
+                alt=""
+                class="slider-box__img-before"
+              />
+            </div>
+            <img src="img/header-logo.png" class="slider-logo" alt="" />
+            <div class="before-after">
+              <span>до</span>
+              <span>післе</span>
+            </div>
+          </div>       
+        </div>
+        <button class="btn-form btn-form__red btn-form__center" id="btn-form">
+          Записатися на консультацію
+        </button>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="content">
+        <h2 class="title">Відгуки клієнтів про нашу роботу</h2>
+        <div class="reviews__slider">
+          <div class="reviews__slider-item">
+            <iframe
+              width="370"
+              height="260"
+              src="https://www.youtube.com/embed/dBE0jqdbm78"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260" 
+              src="https://www.youtube.com/embed/aSy2XQ6Y5mc?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe> 
+          </div>
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260"  
+              src="https://www.youtube.com/embed/qMC0UoGH4Bc?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs"   
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260" 
+              src="https://www.youtube.com/embed/bMik2HhLabk?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="reviews__slider-item">
+            <iframe 
+              width="370" 
+              height="260" 
+              src="https://www.youtube.com/embed/_wjBT8s5t5E?list=PL0ha4odM_SY8PkaHKZivTp8NY3T7tiwfs" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <h2 class="title reviews-title">Майстер Мед піклується про Вас</h2>
+      </div>
+    </section>
+
+    <section class="call-center">
+      <div class="content">
+        <div class="call-center__inner">
+          <h3 class="call-center__title">
+            З 8.00 до 20.00 працює Call-center
+          </h3>
+          <div class="call-center__info">
+            Менеджер із супроводу клієнта завжди з Вами на зв'язку і відповість на всі питання, підбере зручний час для прийому.
+          </div>
+          <div class="call-center__info">
+            Ми завжди поруч, щоб Ви отримали бажаний результат.
+          </div>
+          <button class="btn-form btn-form__green" id="btn-form" type="button">
+            Задати питання
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="content">
+        <h2 class="title">Контакти</h2>
+        <div class="contacts-social">
+          <a href="tel:+380955111704" class="contacts__info-phone-link">
+            <img src="img/phone.png" class="contacts__info-phone-img" alt="" />
+            +38 (095) 511 17 04
+          </a>
+          <a
+            href="viber://chat?number=+380661232375"
+            class="contacts__info-phone-link"
+          >
+            <img src="img/viber.png" class="contacts__info-phone-img" alt="" />
+            (066) 123 23 75
+          </a>
+          <a
+            class="contacts__info-phone-link"
+            href="mailto:mastermedcomua@gmail.com"
+          >
+            <img src="img/gmail.png" class="contacts__info-phone-img" alt="" />
+            mastermedcomua@gmail.com
+          </a>
+          <a
+            href="tg://resolve?domain=master_med_kh"
+            class="contacts__info-phone-link"
+          >
+            <img
+              src="img/telegram.png"
+              class="contacts__info-phone-img"
+              alt=""
+            />
+            (066) 123 23 75
+          </a>
+        </div>
+        <div class="social__link-wrapper">
+          <a
+            href="https://www.instagram.com/master_med_/"
+            class="social__link"
+            target="_blank"
+          >
+            <img
+              src="img/icon/instagram.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/mastermedOfficial/"
+            class="social__link"
+            target="_blank"
+          >
+            <img src="img/facebook.png" alt="" width="25" height="25" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCeHGO1unQAdOSzLCDIy6W1Q"
+            class="social__link"
+            target="_blank"
+          >
+            <img src="img/youtube.png" alt="" width="30" height="30" />
+          </a>
+        </div>
+        <div class="contacts__info-subtitle">
+          Натисніть на адресу для швидкого переходу:
+        </div>
+
+        <div class="geolocation">
+          <div id="geolocation-btn__inner">
+            <div class="geolocation-btn__inner-item">
+              <div class="geolocation__title-item">Центр</div>
+              <div class="geolocation-btn active" data-location="1">
+                пров. Троїцький, 2
+              </div>
+              <div class="geolocation-btn" data-location="2">
+                вул. Максиміліанівська, 3
+              </div>
+              <div class="geolocation-btn" data-location="3">
+                вул. Лермонтовська, 18-А
+              </div>
+              <div class="geolocation-btn" data-location="4">
+                пр. Науки, 27
+              </div>
+            </div>
+            <div class="geolocation-btn__inner-item">
+              <div class="geolocation__title-item">Салтiвка</div>
+              <div class="geolocation-btn" data-location="5">вул. Амосова, 13</div>
+              <div class="geolocation-btn" data-location="6">
+                пр. Тракторобудівників, 112
+              </div>
+              <div class="geolocation-btn" data-location="7">
+                вул. Гвардійців-Широнінців, 127
+              </div>
+            </div>
+            <div class="geolocation-btn__inner-item">
+              <div class="geolocation__title-item">
+                Новi Дома, ХТЗ, Роганський ж/м
+              </div>
+              <div class="geolocation-btn" data-location="8">
+                вул. Зубарєва, 39-А
+              </div>
+              <div class="geolocation-btn" data-location="9">
+                вул. Харківських Дивізій, 7
+              </div>
+            </div>
+          </div>             
+          <div class="map__inner">
+            <div class="map active" data-map="1">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія «Мастер Мед» №1 <br />
+                  пров. Троїцький (Івана Дубового), 2
+                </div>
+                <div class="map__info-subtitle"> Як дістатися:</div>
+                <p class="map__info-text">
+                  Від вул. Одеська - марш. таксі 218е, тролейбус № 5, №6, №3
+                  <br />
+                  Від Залютино, м. Холодна гора, Москалівка - трамвай № 3 <br />
+                  Від Баварії - марш. таксі 11 Е до пл. Конституції <br />
+                  Від Олексіївки - марш. таксі № 119 е до пров. Плетневський <br />
+                  Від Аеропорту - тролейбус № 5 до вул. Кузнечної <br />
+                  7 хв пішки від ст. метро Площа Конституції (Радянська). Кабінет розташований в 100 метрах від ТЦ «Павлівський».
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1481.9034756460337!2d36.230320741030496!3d49.987297634171405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f6a52bbed3%3A0x751a51d1768abaee!2z0L_QtdGALiDQotGA0L7QuNGG0LrQuNC5LCAyLCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1622202283361!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="4">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія «Мастер Мед» №4 <br>
+                  пр-т Науки, 27
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  Поруч зі ст. метро Ботанічний Сад
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.3401127664283!2d36.221088415696855!3d50.02372247941882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1312715acbd%3A0x4f247b73a27d759c!2z0L_RgNC-0YHQvy4g0J3QsNGD0LrQuCwgMjcsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNjEwMDA!5e0!3m2!1sru!2sus!4v1622732846060!5m2!1sru!2sus" 
+                  width="540" 
+                  height="397" 
+                  style="border:0;" 
+                  allowfullscreen=""
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+            <div class="map" data-map="5">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія «Мастер Мед» №5 <br />
+                  вул. Амосова (Корчагінців), 13
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  З Жовтневого району на маршрутному таксі 211Е; <br />
+                  Від ст. метро «Барабашова» на маршрутному таксі 10Е;<br />
+                  З Київського району на маршрутному таксі 233Е.
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи:  </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.3760529328374!2d36.35115031516389!3d49.985558728634594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127098781271441%3A0xdeaa7177a7c996ca!2z0YPQuy4g0JDQvNC-0YHQvtCy0LAsIDEzLCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1622202473230!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="9">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія  «Мастер Мед» №6 <br />
+                  вул. Харківських Дивізій, 7
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  2 хв пішки від ст. метро «Армiська»
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.733870875302!2d36.33117581516289!3d49.960094530456985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270bb2d524fcb5%3A0x9934b9e488e2db1a!2z0YPQuy4g0KXQsNGA0YzQutC-0LLRgdC60LjRhSDQlNC40LLQuNC30LjQuSwgNywg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622203196866!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="2">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія «Мастер Мед» №2 <br />
+                  вул. Максиміліанівська, 3
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  3 хв пішки від ст. метро Пушкінська.
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.474258087935!2d36.24461361516458!3d50.00246552742421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0c2e9db7391%3A0xdeb88c8495fd4097!2z0YPQuy4g0JzQsNC60YHQuNC80LjQu9C40LDQvdC-0LLRgdC60LDRjywgMywg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622202639035!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="6">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія  «Мастер Мед» №7 <br />
+                  пр-т Тракторобудівників, 112
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  Від ст. метро «Барабашова» на тролейбусі №24 або маршрутному таксі 10Е; <br>
+                  Кабінет розташований в 800 метрах від ТРЦ Україна.
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.551283251441!2d36.33950571516451!3d50.00102162752758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709f20efd5cc1%3A0xeb0124d7d73c8bc4!2z0L_RgNC-0YHQvy4g0KLRgNCw0LrRgtC-0YDQvtGB0YLRgNC-0LjRgtC10LvQtdC5LCAxMTIsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1622203116207!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="8">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія «Мастер Мед» №9 <br />
+                  вул. Зубарєва, 39-А
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  Від ст. метро «Пролетарська» на маршрутному таксі 16Е і 71е;
+                  <br />
+                  Від ст. метро «Барабашова» на маршрутному таксі 121е. <br />
+                  <br />
+                  Зупинка транспорту «Вул. Зубарєва» (вул. Сергія Грицевця)
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи: </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2569.300145092404!2d36.40553511516078!3d49.91194123390144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270cf128b78299%3A0x5ea4b519619172d4!2z0YPQuy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0JfRg9Cx0LDRgNC10LLQsCwgMzksINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1622203292968!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="3">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія «Мастер Мед» №3 <br />
+                  вул. Лермонтовська, 18-А
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  8 хв пішки від ст. метро Пушкінська.
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи:  </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.3218406594883!2d36.25160511516472!3d50.005322627219705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0c45fea5987%3A0x8d1b2e50e196357a!2zMThBLCDQm9C10YDQvNC-0L3RgtC-0LLRgdC60LDRjyDRg9C7LiwgMTjQkCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622202809280!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+            <div class="map" data-map="7">
+              <div class="map__info">
+                <div class="map__info-title">
+                  Стоматологія «Мастер Мед» №8 <br />
+                  вул. Гвардійців-Широнінців, 127
+                </div>
+                <div class="map__info-subtitle">Як дістатися:</div>
+                <p class="map__info-text">
+                  Від ст. метро «Московський проспект» на тролейбусі №31; <br />
+                  З Одеської на тролейбусі №35, маршрутному таксі 107Е; <br />
+                  Від Героїв Праці на автобусах 28 і 41Е;<br />
+                  З Олексіївки на маршрутному таксі 55е;<br />
+                  Від ст. метро «Малишева» на маршрутному таксі 294Е. <br />
+                  <br />
+                  Зупинка транспорту «Північна Салтівка» (троллейб. коло).
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Час роботи:  </span>
+                  <span>Пн-Сб 8.00-20.00</span>
+                </p>
+                <p class="map__info-text">
+                  <span style="font-weight: bold">Оплата:</span>
+                  <span>готівкою і банківськими картами</span>
+                </p>
+              </div>
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.462220084906!2d36.36125081516622!3d50.040172024723816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a787e62b191d%3A0xa73e583eef5cb828!2z0YPQuy4g0JPQstCw0YDQtNC10LnRhtC10LIt0KjQuNGA0L7QvdC40L3RhtC10LIsIDEyNywg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1622202979411!5m2!1sru!2sua"
+                  width="540"
+                  height="397"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content">
+        <div class="footer__row">
+          <a href="#header" class="footer__link">
+            <img src="img/footer-logo.png" alt="" class="footer__link-logo" />
+          </a>
+          <p class="confidentiality">Політика конфіденційності</p>
+          <p class="confidentiality">© 2021 "Майстер Мед". Всі права захищені</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
