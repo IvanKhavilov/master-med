@@ -645,7 +645,7 @@ body {
   top: -79px;
 }
 .reviews-title {
-  margin-top: 15px;
+  margin-top: 45px;
   text-align: center;
 }
 
@@ -1212,7 +1212,7 @@ body {
     height: 710px;
   }
   .header__info-list {
-    width: 290px;
+    width: 310px;
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 30px;
