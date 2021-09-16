@@ -313,10 +313,16 @@ body {
 }
 .services__box{
   height: 542px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .whitening-services__box,
 .braces-services__box{
   height: 574px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .whitening-services__icon {
   position: absolute;
@@ -436,9 +442,6 @@ body {
 #services-btn {
   position: absolute;
   bottom: 30px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 .services__info-btn:hover {
   background: #75be43;
@@ -900,13 +903,16 @@ body {
   }
   .slick-arrow {
     position: absolute;
-    top: 505px;
+    top: 295px;
   }
   .slick-prev {
     left: 65px;
   }
   .slick-next {
     right: 65px;
+  }
+  .reviews-title {
+    margin-top: 85px;
   }
 }
 
@@ -1104,6 +1110,7 @@ body {
     background-color: #ffffff;
     padding: 15px 15px 15px 15px;  
     width: 50%;  
+    z-index: 10;
   }
   
   .braces-menu__list._active {
@@ -1127,6 +1134,7 @@ body {
     height: 180px;
     justify-content: space-between;
     width: 50%;
+    z-index: 10;
   }
   .sity-name {
     margin-left: 10px;
@@ -1142,7 +1150,6 @@ body {
 @media (max-width: 630px) {
   .header__top-inner._active {
     width: 80%;
-    z-index: 10;
   }
   .menu__list._active {
     width: 81.5%;
@@ -1225,7 +1232,6 @@ body {
     z-index: 100;
   }
   .modal-window {
-    width: 100%;
     height: 460px;
   }
   .modal-window__wrapper {
